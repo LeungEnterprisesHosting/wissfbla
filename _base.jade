@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(viewport="width=device-width, initial-scale=1")
+      
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="css/styles.css")
+    
+    block head
+  body
+    .menu-container
+      .menu-content
+        h1
+          a(href='/') Home
+        br
+        h1
+          a(href='/calendar') Calendar
+        br
+        h1
+          a(href='/contact') Contact
+    .hamburger-container
+      .hamburger
+        span
+        span
+        span
+        span
+    .jumbotron.jumbotron-background(data-parallax="scroll" data-image-src="img/galaxy.jpg")
+      .container-fluid
+        .text-center
+          img.img-responsive.block-center#fbla-banner(src="img/banner.png")
+      .container.text-center
+        br
+        br
+        br
+        block content
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+    script(src="js/parallax.min.js")
+    script(src="js/scripts.js")
+    block scripts
