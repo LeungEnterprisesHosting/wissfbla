@@ -1,0 +1,49 @@
+extends _base
+
+block head
+  title Contact Us | Wissahickon FBLA
+  
+block content
+  .row
+    .col-xs-12.col-sm-10.col-sm-offset-1
+      h1.text-uppercase Contact Us
+      p.
+        Feel free to contact us with any questions.
+      br
+      br
+      .row
+        .col-sm-6.text-left
+          form(action="//formspree.io/fbla.wissahickon@gmail.com")
+            .form-group
+              .row
+                .col-sm-6
+                  label.required First Name
+                  input.form-control(type="text" name="firstName")
+                .col-sm-6
+                  label.required Last Name
+                  input.form-control(type="text" name="lastName")
+            .form-group
+              label.required Email
+              input.form-control(type="email" name="_replyto")
+            .form-group
+              label.required Message
+              textarea.form-control(name="message" rows='5')
+            .form-group
+              br
+              button.btn.btn-transparent-light(type="submit") Send
+        .col-sm-6
+          p.
+            President: Ben Kessler<br>
+            <br>
+            Vice President: Ethan Baim<br>
+            <br>
+            Vice President: Sam Hunt<br>
+            <br>
+            Treasurer: Ben Soll<br>
+            <br>
+            Treasurer: Ben Chaiken<br>
+            <br>
+            Secretary: Emily Weinberg<br>
+            <br>
+            Advisors: Mrs. Mulroy, Mrs. Kern
+    

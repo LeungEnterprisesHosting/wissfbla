@@ -1,6 +1,18 @@
 $(document).ready(function() {
   $('.hamburger').click(function(){
 		$(this).toggleClass('open');
-    $('.hamburger-container, .menu-container').toggleClass("open");
+    $('.hamburger-container, .hamburger-navbar, .menu-container, #calendar').toggleClass("open");
 	});
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 90) {
+      if (!$('.hamburger-navbar').hasClass('scrolled')) {
+        $('.hamburger-navbar').addClass('scrolled');
+      }
+    } else {
+      if ($('.hamburger-navbar').hasClass('scrolled')) {
+        $('.hamburger-navbar').removeClass('scrolled');
+      }
+    }
+  });
 });

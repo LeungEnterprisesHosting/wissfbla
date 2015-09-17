@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta(charset="UTF-8")
-    meta(viewport="width=device-width, initial-scale=1")
+    meta(name='viewport' content="width=device-width, initial-scale=1")
       
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700")
@@ -21,6 +21,9 @@ html
         br
         h1
           a(href='/contact') Contact
+    .hamburger-navbar
+      .text-right.navbar-right
+        h1.navbar-text WISSFBLA
     .hamburger-container
       .hamburger
         span
@@ -33,9 +36,16 @@ html
           img.img-responsive.block-center#fbla-banner(src="img/banner.png")
       .container.text-center
         br
-        br
-        br
         block content
+    footer.navbar.navbar-default
+      .container
+        ul.nav.navbar-nav
+          p.navbar-text © 2015 Wissahickon FBLA.  All Rights Reserved.
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='https://docs.google.com/forms/d/1Ma7iJr9_XqrCTzfb1doKIzww-5qOdYYKekWnvePLhpM/viewform') Join Today &raquo;
+
+      
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
     script(src="js/parallax.min.js")
