@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name='viewport' content="width=device-width, initial-scale=1")
@@ -20,10 +20,13 @@ html
           a(href='/calendar') Calendar
         br
         h1
+          a(href='/news') News
+        br
+        h1
           a(href='/contact') Contact
     .hamburger-navbar
       .text-right.navbar-right
-        h1.navbar-text WISSFBLA
+        //- h1.navbar-text WISSFBLA
     .hamburger-container
       .hamburger
         span
@@ -33,7 +36,8 @@ html
     .jumbotron.jumbotron-background(data-parallax="scroll" data-image-src="img/galaxy.jpg")
       .container-fluid
         .text-center
-          img.img-responsive.block-center#fbla-banner(src="img/banner.png")
+          a(href='/')
+            img.img-responsive.block-center#fbla-banner(src="img/banner.png")
       .container.text-center
         br
         block content
