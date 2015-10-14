@@ -60,10 +60,12 @@ body
   right 0
   z-index 2
   min-height 85px
-  transition all 0.2s
+  transition all 0.3s
 
   &.open
     z-index -1
+    &.scrolled
+      margin-top -85px
 
   &.scrolled
     opacity 1
@@ -84,11 +86,16 @@ body
     position static
     padding 15px
     z-index 9999
+    
+    &.scrolled
+      position fixed
+      top 15px
+      left 5px
 
     &.open
       position fixed
-      top 15px
-      left 15px
+      top 28px
+      left 17px
       margin 0
       padding 0
 
@@ -96,6 +103,7 @@ body
 .hamburger
   scale = 0.5
   display block
+  z-index 2
   width: 60px * scale;
   height: 45px * scale;
   position: relative;
