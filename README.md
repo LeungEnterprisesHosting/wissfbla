@@ -8,4 +8,5 @@ Visit us! [Wissahickon FBLA](http://wissfbla.com)
 4. `git commit` the entire directory to the `www-source` repository
 5. `git commit` the `www` directory to the `wissfbla.github.io` repository
 ## Development Workflow
-To update the news, copy `latest-news.jade` to under `include latest-news` in `news.jade` and replace it with the newest news.
+* To update the news, copy `_latest-news.jade` to under `include _latest-news` in `news.jade` and replace it with the newest news.
+* Run `./deploy.sh` to compile everything, then `git commit` and `git push` from each repository's respective directory.
