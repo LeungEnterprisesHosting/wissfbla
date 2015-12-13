@@ -58,6 +58,9 @@ gulp.task('img', () => {
 });
 
 gulp.task('default', ['html', 'css', 'js', 'img'], () => {
+});
+
+gulp.task('dev', ['default'], () => {
   gulp.watch('./src/**/*.jade', ['html']);
   gulp.watch('./src/css/styles.styl', ['css']);
   gulp.watch('./src/js/scripts.js', ['js']);

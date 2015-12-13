@@ -1,0 +1,11 @@
+before_script:
+- npm install -g gulp
+- npm install -g harp
+script: bash ./deploy.sh
+env:
+  global:
+  - GH_REF: github.com/LeungEnterprisesHostiing/wissfbla.git
+  - secure: RzBqpas9alNGY/+lsRd+5WjY/2jOjUlyuYb8YaMWStIbiQBsiW1tLK2ZYAkh5HTzNCHLpBHhSyiFklv94JygZDr37HpobvrXD2vvXJEW+PiO19K/x8NvtiiLj0OnCAj3yjAySslUuRxwd6Lur/JLDSogaJ7vmOdQTPpX8hSkNzprJn3Mmab8ye9qDShxBNWk1lywDLvz1V5Le+YneuHfeJ/k0+IK4yX74iF35WnIw4XCJVTXS3tKL9rMVocrhsizm/nxte4sn6SBStCBTQPTNF8+Tfv+Bl5xaVKzrRwZX75Jq+CeX26/VfFTGQ3/G96OHhfnFvt2aOJu3wvn634AFW26HQg1wb+eVRJfsJL0aVoUWkVsKDWcd6opT/9i8HZwka26sr5DKOdvhnlgWeB+i4if9suj4qFmldNxRbkFx1S7uNfhRmyJWNnmkzb2Ca+hAAeWvUfm078vDvbHcklXwzwKmOb9UPKQ0RmMaEcXHUV++AlVR9MlnfLraP8IG5ekKdUBLn/o1XCc6meEIL0Q1+r1LbKLV+87Xn+NwuNfEJ9aO/rhr0woO2IM8AkBAFXCtdsO60N0kNjmcFe0V5YO0Z7+lBrR7U7ZhBOM77uw7GkzSh//d8JakzojlSjyXcNXh0G/moIPoPB2JbpeZDd7gHnym0LfGHRxY9I00YqhBx0=
+language: node_js
+node_js:
+- '4.2'
