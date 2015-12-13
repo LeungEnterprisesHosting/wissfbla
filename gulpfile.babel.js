@@ -59,7 +59,12 @@ gulp.task('img', () => {
     .pipe(gulp.dest('./build/img'));
 });
 
-gulp.task('default', ['html', 'css', 'js', 'img'], () => {
+gulp.task('copy', () => {
+  return gulp.src(['./src/CNAME', './src/README.md'])
+    .pipe(gulp.dest('./build'))
+})
+
+gulp.task('default', ['html', 'css', 'js', 'img', 'copy'], () => {
 });
 
 gulp.task('dev', ['default'], () => {
