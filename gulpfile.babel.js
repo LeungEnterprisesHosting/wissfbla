@@ -21,7 +21,9 @@ const cssTasks = lazypipe()
   .pipe(minifyCss);
 
 const jsTasks = lazypipe()
-  .pipe(babel)
+  .pipe(babel, {
+    presets: ["es2015"]
+  })
   .pipe(uglify);
 
 const imgTasks = lazypipe()
